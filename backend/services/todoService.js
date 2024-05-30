@@ -19,7 +19,7 @@ const getTodos = async () => {
 
 const deleteTodo = async (id) => {
   return await prisma.todo.delete({
-    where: { id: id },
+    where: { id },
   });
 };
 
